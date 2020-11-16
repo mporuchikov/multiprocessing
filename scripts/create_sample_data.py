@@ -21,13 +21,13 @@ def draw_poly(img_src):
     return img_dst
 
 
-for i in range(10):
+for i in range(n):
 
   # create blank image with random size
-  size = np.random.randint(5, 20) * 100
+  size = np.random.randint(20, 50) * 100
   img = np.zeros((size, size, 3), dtype=np.uint8) + 255
 
-  # draw some figures
+  # draw some polygons
   for j in range(50):
       img = draw_poly(img)
   
